@@ -1,0 +1,7 @@
+.drp-icon-yes {
+    background: url("icons/tick.png") no-repeat scroll 0 0 transparent !important;
+}
+
+.drp-icon-calendar {
+    background: url("icons/calendar.png") no-repeat scroll 0 0 transparent !important;
+}
