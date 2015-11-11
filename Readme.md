@@ -5,7 +5,7 @@ Date Range Picker Component
 
 **Features:**
 
-  * Easily choose period between two dates via a single button
+  * Easily c1hoose period between two dates via a single button
   * Can be used everywhere within the app, just as a normal button	  
   * Optionally, include start/end times in the dates
   * 5 preset periods available for quick set - this week, last week, this month, last month, this year
