@@ -3,6 +3,11 @@ Ext.define('Ext.ux.button.DateRangePicker',
 	extend: 'Ext.button.Button'
 	,alias: 'widget.daterangepicker'			
 	
+	,requires:
+	[
+		'Ext.picker.Date',
+		'Ext.form.field.Time'
+	]
 	,menu: 
 	{
 		plain: true, allowOtherMenus: true, 

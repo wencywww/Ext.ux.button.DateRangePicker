@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>.:: js test ::.</title>
+
+
+
+<!-- Put in the Ext initialization stuff (ext-4.2.1.883)
+<link rel="stylesheet" type="text/css" href="/extjs/ext-4.2.1.883/resources/ext-theme-classic/ext-theme-classic-all.css" />
+<script type="text/javascript" src="/extjs/ext-4.2.1.883/ext-all-debug.js"></script>
+<script type="text/javascript" src="/extjs/ext-4.2.1.883/locale/ext-lang-bg.js"></script>
+ -->
+
+<!-- Put in the Ext initialization stuff (5.1.1.451) 
+<link rel="stylesheet" type="text/css" href="/extjs/ext-5.1.1-gpl/ext-5.1.1/build/packages/ext-theme-classic/build/resources/ext-theme-classic-all.css" />
+<script type="text/javascript" src="/extjs/ext-5.1.1-gpl/ext-5.1.1/build/ext-all-debug.js"></script>
+<script type="text/javascript" src="/extjs/ext-5.1.1-gpl/ext-5.1.1/build/packages/ext-locale/build/ext-locale-bg-debug.js"></script>
+ -->
+
+<!-- Put in the Ext initialization stuff (6.0.0.640) -->
+<link rel="stylesheet" type="text/css" href="/extjs/ext-6.0.0-gpl/ext-6.0.0/build/classic/theme-classic/resources/theme-classic-all.css">
+<script type="text/javascript" src="/extjs/ext-6.0.0-gpl/ext-6.0.0/build/ext-all-debug.js"></script>
+<script type="text/javascript" src="/extjs/ext-6.0.0-gpl/ext-6.0.0/build/classic/theme-classic/theme-classic-debug.js"></script>
+<script type="text/javascript" src="/extjs/ext-6.0.0-gpl/ext-6.0.0/build/classic/locale/locale-bg-debug.js"></script>
+-->
+
+
+<!-- Stuff for the DateRangePicker -->
+<link rel="stylesheet" type="text/css" href="resources/css/DateRangePicker.css" />
+<script type="text/javascript" src="resources/src/DateRangePicker.js"></script>
+
+
+<script type="text/javascript">
+	
+Ext.onReady( function()
+{
+	Ext.QuickTips.init();
+	
+	Ext.create('Ext.panel.Panel', {
+		
+		renderTo: Ext.getBody(),
+		title: 'Панел титле',
+		width: 600, height: 600,
+		//html: 'Ext Version is: ' + Ext.getVersion().version,
+		tbar:[
+		//{xtype: 'button', text: 'Бутон 1'}
+		//,{ xtype: 'datefield'}
+		//{ xtype: 'daterangepicker', showTimePickers: true}
+		],
+		
+		dockedItems:[
+			{
+				xtype: 'toolbar', dock: 'top',
+				items: 
+				[
+					//{xtype: 'datepicker'},
+					
+					'->',
+					{xtype: 'daterangepicker', id: 'kuro' 
+						,drpDefaults: {showTimePickers: true}
+					}
+					//,{xtype: 'button', text: 'test', menu: {allowOtherMenus: true, items: [{xtype: 'datepicker'}]}}
+					
+				]
+			},		
+			{
+				xtype: 'toolbar', dock: 'bottom',
+				items: 
+				[
+					'->', 'Ext Version is: ' + Ext.getVersion().version, 
+					{
+						xtype: 'daterangepicker', id: 'kuro1', 
+						drpDefaults: 
+						{
+							selectedStart: '1974-02-26',
+							selectedEnd: '2014-02-26',
+							dateFormat: 'd F Y',
+							showButtonTip: true,
+							showTimePickers: true,
+							timeFormat: 'g:i:s A',
+							timeIncrement: 30,
+							timePickerFromValue: '5:55:55 PM',
+							timePickerToValue: '4:44:44 pm',
+							timePickersEditable: true,
+							timePickersQueryDelay: 500,
+							timePickersWidth: 120,
+							mainBtnTextPrefix: 'Период: ', 
+							mainBtnIconCls: 'drp-icon-yes', 
+							mainBtnTextColor: '#ff0000', 
+							presetPeriodsBtnText: 'Фиксирани периоди',
+							presetPeriodsBtnIconCls: 'drp-icon-yes',
+							presetPeriodsThisWeekText: 'Тaзи седмица',
+							presetPeriodsLastWeekText: 'Миналата седмица',
+							presetPeriodsThisMonthText: 'Този месец',
+							presetPeriodsLastMonthText: 'Миналия месец',
+							presetPeriodsThisYearText: 'Тази година',
+							confirmBtnText: 'Потвърди',
+							confirmBtnIconCls: 'drp-icon-calendar'
+						}
+					}
+				]
+			}
+			//,{xtype:'monthpicker'}
+		],
+		items: []
+		
+	});
+
+		
+});
+		
+</script>
+
+
+</head>
+
+
+<body>
+</body>
+</html>
