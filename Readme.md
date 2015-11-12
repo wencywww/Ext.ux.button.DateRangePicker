@@ -66,7 +66,7 @@ Date Range Picker Component
 
 [Sencha's Fiddle: https://fiddle.sencha.com/#fiddle/10t2](https://fiddle.sencha.com/#fiddle/10t2)
 
-[JSFiddle: fiddle.net/mx_starter/xLvg5yj6/](fiddle.net/mx_starter/xLvg5yj6/)
+[JSFiddle: http://jsfiddle.net/mx_starter/xLvg5yj6/](http://jsfiddle.net/mx_starter/xLvg5yj6/)
 
 
 
