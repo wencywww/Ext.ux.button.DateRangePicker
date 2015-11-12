@@ -62,7 +62,14 @@ Date Range Picker Component
   * To get the value of the instance, use `var myPickerValue = myRangePicker.getValue()` and inspect the myPickerValue object
   
   
-**Demo**
+**Demos**
 
-Demo is available via the powerful Sencha's Fiddle platform here:
-[link](https://fiddle.sencha.com/#fiddle/10t2)
+[Sencha's Fiddle: https://fiddle.sencha.com/#fiddle/10t2](https://fiddle.sencha.com/#fiddle/10t2)
+
+[JSFiddle: fiddle.net/mx_starter/xLvg5yj6/](fiddle.net/mx_starter/xLvg5yj6/)
+
+
+
+**List of Changes**
+
+  * **2015-11-12**, added 'requires' config for including Ext.picker.Date & Ext.form.field.Time if needed
