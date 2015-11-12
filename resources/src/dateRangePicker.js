@@ -124,7 +124,10 @@ Ext.define('Ext.ux.button.DateRangePicker',
 			presetPeriodsLastWeekText: 'Last Week',
 			presetPeriodsThisMonthText: 'This Month',
 			presetPeriodsLastMonthText: 'Last Month',
-			presetPeriodsThisYearText: 'This Year'
+			presetPeriodsThisYearText: 'This Year',
+			bindDateFields: false,
+			boundStartField: null,
+			boundEndField: null
 		}
 		
 		//merge the defaults with the instance configurations if any
@@ -273,7 +276,16 @@ Ext.define('Ext.ux.button.DateRangePicker',
 			me.setTooltip(tTipText);
 		}
 		
-
+		//update bound datefields if any
+		if (
+				drpConfig.bindDateFields && drpConfig.boundStartField && drpConfig.boundEndField && 
+				drpConfig.boundStartField.isComponent && drpConfig.boundStartField.isXType('datefield') &&
+				drpConfig.boundEndField.isComponent && drpConfig.boundEndField.isXType('datefield')
+			 )
+		{
+			drpConfig.boundStartField.setValue( panel.down('datepicker[drpItemRole=pickFrom]').getValue() );
+			drpConfig.boundEndField.setValue( panel.down('datepicker[drpItemRole=pickTo]').getValue() );
+		}
 	}
 
 	//set the second pickers values according to the first one so that the first date time to be always <= from the second one

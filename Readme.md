@@ -51,7 +51,10 @@ Date Range Picker Component
   * **presetPeriodsLastWeekText**, string, menu option text for choosing last week, defaults to 'Last Week'
   * **presetPeriodsThisMonthText**, string, menu option text for choosing this month, defaults to 'This Month'
   * **presetPeriodsLastMonthText**, string, menu option text for choosing the last month, defaults to 'Last Month'
-  * **presetPeriodsThisYearText**, string, menu option text for choosing the last week, defaults to 'This Year'
+  * **presetPeriodsThisYearText**, string, menu option text for choosing the last week, defaults to 'This Year',
+  * **bindDateFields**, boolean, if true, allows two date fields to be bound to the picker and automatically updated, defaults to false
+  * **boundStartField**, Ext.form.field.Date instance, to be bound to the first datepicker, defaults to null
+  * **boundEndField**, Ext.form.field.Date instance, to be bound to the second datepicker, defaults to null
 
   
 **Usage**
@@ -73,3 +76,4 @@ Date Range Picker Component
 **List of Changes**
 
   * **2015-11-12**, added 'requires' config for including Ext.picker.Date & Ext.form.field.Time if needed
+  * **2015-11-12**, added support for binding two datefield components to the picker and automatically set their values upon picker change
