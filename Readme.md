@@ -8,6 +8,7 @@ Date Range Picker Component
   * Easily choose period between two dates via a single button
   * Can be used everywhere within the app, just as a normal button	  
   * Optionally, include start/end times in the dates
+  * Optionally, two datefield components could be bound and automatically updated by the piskers
   * 5 preset periods available for quick set - this week, last week, this month, last month, this year
   * Custom formats accepted for dates and times
   * Customizable captions, icons  
