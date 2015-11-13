@@ -1,6 +1,6 @@
 
-Date Range Picker Component
-===========================
+Date Range Picker Component for ExtJS
+-------------------------------------
 
 
 **Source at GitHub**
