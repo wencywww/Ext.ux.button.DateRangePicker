@@ -9,6 +9,16 @@ Date Range Picker Component for ExtJS
 
 
 
+**Demos**
+
+[Sencha's Fiddle: https://fiddle.sencha.com/#fiddle/10t2](https://fiddle.sencha.com/#fiddle/10t2)
+
+[JSFiddle: http://jsfiddle.net/mx_starter/xLvg5yj6/](http://jsfiddle.net/mx_starter/xLvg5yj6/)
+
+
+
+
+
 **Features:**
 
   * Easily choose period between two dates via a single button
@@ -71,14 +81,6 @@ Date Range Picker Component for ExtJS
   * Instantiate the class, for example `var myRangePicker = Ext.create('Ext.ux.button.DateRangePicker', drpDefaults: {} )`, or using the 'daterangepicker' xtype
   * To get the value of the instance, use `var myPickerValue = myRangePicker.getValue()` and inspect the myPickerValue object
   
-  
-**Demos**
-
-[Sencha's Fiddle: https://fiddle.sencha.com/#fiddle/10t2](https://fiddle.sencha.com/#fiddle/10t2)
-
-[JSFiddle: http://jsfiddle.net/mx_starter/xLvg5yj6/](http://jsfiddle.net/mx_starter/xLvg5yj6/)
-
-
 
 **List of Changes**
 
