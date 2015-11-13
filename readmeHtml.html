@@ -1,0 +1,85 @@
+<h2>Date Range Picker Component for ExtJS</h2>
+
+<p><strong>Source at GitHub</strong></p>
+
+<p><a href="https://github.com/wencywww/Ext.ux.button.DateRangePicker">https://github.com/wencywww/Ext.ux.button.DateRangePicker</a></p>
+
+<p><strong>Features:</strong></p>
+
+<ul>
+<li>Easily choose period between two dates via a single button</li>
+<li>Can be used everywhere within the app, just as a normal button<br></li>
+<li>Optionally, include start/end times in the dates</li>
+<li>Optionally, two datefield components could be bound and automatically updated by the pickers</li>
+<li>5 preset periods available for quick set - this week, last week, this month, last month, this year</li>
+<li>Custom formats accepted for dates and times</li>
+<li>Customizable captions, icons<br></li>
+<li>Customizable via a simple config object</li>
+<li>Returns an object containg the period details via the getValue() method</li>
+<li>Tested with ExtJS version 4.2.1.883 and up<br></li>
+</ul>
+
+<p><strong>Component layout:</strong></p>
+
+<ul>
+<li>It is a ExtJS button with a menu</li>
+<li>The menu includes a single item, panel</li>
+<li>The panel has separate containers for start/end datepickers and timefields</li>
+<li>The panel includes 2 buttons for choosing the preset periods / confirming the choice</li>
+</ul>
+
+<p><strong>Config object</strong></p>
+
+<ul>
+<li>The config object is optional, if some of the configs are not provided, or there is no config object at all, defaults are applied</li>
+<li>Config object name is <strong>drpDefaults</strong> and accepts the following keys</li>
+<li><strong>selectedStart</strong>, string in the format 'Y-m-d', sets the first datepicker value, defaults to the first day of the curren month</li>
+<li><strong>selectedEnd</strong>, string in the format 'Y-m-d', sets the second datepicker value, defaults to today</li>
+<li><strong>dateFormat</strong>, string in the Ext.Date.parse() recognisable format, determines how the dates are shown by the component, defaults to 'Y-m-d'</li>
+<li><strong>showButtonTip</strong>, boolean value, if true, applies a tooltip to the main button with a current selection, defaults to true</li>
+<li><strong>showTimePickers</strong>, boolean value, if true, two timefields are added below the datepickers to be able to choose start/end times</li>
+<li><strong>timeFormat</strong>, formatting string for the timefields, must be recognisable by Ext.Date.parse()</li>
+<li><strong>timePickerFromValue</strong>, string with a value of the first timefield, must be recognisable by Ext.Date.parse() and MUST MATCH the timeFormat config, defaults to 'H:i:s'</li>
+<li><strong>timePickerToValue</strong>, string with a value of the second timefield, must be recognisable by Ext.Date.parse() and MUST MATCH the timeFormat config, defaults to 'H:i:s'</li>
+<li><strong>timePickersEditable</strong>, boolean value, if true, the timefields combos will be editable, defaults to false</li>
+<li><strong>timeIncrement</strong>, number, indicating the step (in minutes) the timefield's combo records are generated, defaults to 5</li>
+<li><strong>timePickersQueryDelay</strong>, number, the timefield's combos query delay, defaults to 500</li>
+<li><strong>timePickersWidth</strong>, number, the timefield's width, defaults to 100</li>
+<li><strong>mainBtnTextPrefix</strong>, string, the prefix of the main button, defaults to 'Period: '</li>
+<li><strong>mainBtnIconCls</strong>, string, for setting an icon of the main button, use null if icon is not needed, defaults to 'drp-icon-calendar' </li>
+<li><strong>mainBtnTextColor</strong>, string, for setting the main button text color (excludng the prefix), defaults to '#000000'</li>
+<li><strong>confirmBtnText</strong>, string, the text of the bottom-right confirm button, defaults to 'Set Range'</li>
+<li><strong>confirmBtnIconCls</strong>, string, for setting an icon of the confirm button, use null if icon is not needed, defaults to 'drp-icon-yes' </li>
+<li><strong>presetPeriodsBtnText</strong>, string, the text of the bottom-left preset period button, defaults to 'Preset Periods'</li>
+<li><strong>presetPeriodsBtnIconCls</strong>, string, for setting an icon of the preset period button, use null if icon is not needed, defaults to 'drp-icon-calendar' </li>
+<li><strong>presetPeriodsThisWeekText</strong>, string, menu option text for choosing this week, defaults to 'This Week'</li>
+<li><strong>presetPeriodsLastWeekText</strong>, string, menu option text for choosing last week, defaults to 'Last Week'</li>
+<li><strong>presetPeriodsThisMonthText</strong>, string, menu option text for choosing this month, defaults to 'This Month'</li>
+<li><strong>presetPeriodsLastMonthText</strong>, string, menu option text for choosing the last month, defaults to 'Last Month'</li>
+<li><strong>presetPeriodsThisYearText</strong>, string, menu option text for choosing the last week, defaults to 'This Year',</li>
+<li><strong>bindDateFields</strong>, boolean, if true, allows two date fields to be bound to the picker and automatically updated, defaults to false</li>
+<li><strong>boundStartField</strong>, Ext.form.field.Date instance, to be bound to the first datepicker, defaults to null</li>
+<li><strong>boundEndField</strong>, Ext.form.field.Date instance, to be bound to the second datepicker, defaults to null</li>
+</ul>
+
+<p><strong>Usage</strong></p>
+
+<ul>
+<li>Include the <code>css/DateRangePicker.css</code> file (can be ommited if not using icons, or you want to use own icons)</li>
+<li>Include the <code>src/dateRangePicker.js</code> file (Ext must be included prior to this)</li>
+<li>Instantiate the class, for example <code>var myRangePicker = Ext.create('Ext.ux.button.DateRangePicker', drpDefaults: {} )</code>, or using the 'daterangepicker' xtype</li>
+<li>To get the value of the instance, use <code>var myPickerValue = myRangePicker.getValue()</code> and inspect the myPickerValue object</li>
+</ul>
+
+<p><strong>Demos</strong></p>
+
+<p><a href="https://fiddle.sencha.com/#fiddle/10t2">Sencha's Fiddle: https://fiddle.sencha.com/#fiddle/10t2</a></p>
+
+<p><a href="http://jsfiddle.net/mx_starter/xLvg5yj6/">JSFiddle: http://jsfiddle.net/mx_starter/xLvg5yj6/</a></p>
+
+<p><strong>List of Changes</strong></p>
+
+<ul>
+<li><strong>2015-11-12</strong>, added 'requires' config for including Ext.picker.Date &amp; Ext.form.field.Time if needed</li>
+<li><strong>2015-11-12</strong>, added support for binding two datefield components to the picker and automatically set their values upon picker change</li>
+</ul>
