@@ -3,6 +3,12 @@ Date Range Picker Component
 ===========================
 
 
+**Source at GitHub**
+
+[https://github.com/wencywww/Ext.ux.button.DateRangePicker](https://github.com/wencywww/Ext.ux.button.DateRangePicker)
+
+
+
 **Features:**
 
   * Easily choose period between two dates via a single button
