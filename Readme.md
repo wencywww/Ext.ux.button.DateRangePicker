@@ -30,6 +30,7 @@ Date Range Picker Component for ExtJS
   * Customizable captions, icons  
   * Customizable via a simple config object
   * Returns an object containg the period details via the getValue() method
+  * Returned object also containg PRECISED period details, eg. 13 months are shown as 1 year and 1 month and so on
   * Tested with ExtJS version 4.2.1.883 and up  
 
 
@@ -72,6 +73,24 @@ Date Range Picker Component for ExtJS
   * **bindDateFields**, boolean, if true, allows two date fields to be bound to the picker and automatically updated, defaults to false
   * **boundStartField**, Ext.form.field.Date instance, to be bound to the first datepicker, defaults to null
   * **boundEndField**, Ext.form.field.Date instance, to be bound to the second datepicker, defaults to null
+  * **diffPreciseUnits**, object, customizes precised period details captions for year/years, month/months, day/days and so on, used to build the diffAsText property of the periodDetailsPrecise object part of the responce, defaults to 
+  
+  
+  `{
+        year: 'year',
+        years: 'years',
+        month: 'month',
+        months: 'months',
+        day: 'day',
+        days: 'days',
+        hour: 'hour',
+        hours: 'hours',
+        minute: 'minute',
+        minutes: 'minutes',
+        second: 'second',
+        seconds: 'seconds',
+        delimiter: ' '
+    }`
 
   
 **Usage**
@@ -86,3 +105,4 @@ Date Range Picker Component for ExtJS
 
   * **2015-11-12**, added 'requires' config for including Ext.picker.Date & Ext.form.field.Time if needed
   * **2015-11-12**, added support for binding two datefield components to the picker and automatically set their values upon picker change
+  * **2015-11-12**, added diffPreciseUnits config option for customizing captions used to build the diffAsText property of the periodDetailsPrecise object part of the responce
