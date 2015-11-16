@@ -331,7 +331,7 @@ Ext.define('Ext.ux.button.DateRangePicker',
 	}
 	
 	//set the preset periods	
-	,setPresetPeriod(period)
+	,setPresetPeriod: function(period)
 	{
 		var me = this;
 		var pickerFrom = me.down('datepicker[drpItemRole=pickFrom]');
@@ -554,7 +554,7 @@ if (Ext.getVersion().major < 5 )
 //returns an object with precised period details, eg. the period between 2015-10-15 and 2016-11-16
 //is represented as '1 year 1 month 1 day' instead of 1 year 13 months 398 days as will return the normal Ext.Date.diff()
 //takes the time differences in account, also
-Ext.define('DRPOverride.Ext.Date', 
+Ext.define('DRPOverridePrecise.Ext.Date', 
 {
 	 override: 'Ext.Date'
 	,diffPrecise: function (dMin, dMax, unitCaptions) 
