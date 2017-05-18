@@ -29,7 +29,7 @@ Date Range Picker Component for ExtJS
   * Custom formats accepted for dates and times
   * Customizable captions, icons  
   * Customizable via a simple config object
-  * Returns an object containg the period details via the getValue() method
+  * Returns an object containg the period details via the getPickerValue() method
   * Returned object also containg PRECISED period details, eg. 13 months are shown as 1 year and 1 month and so on
   * Tested with ExtJS version 4.2.1.883 and up  
 
@@ -98,11 +98,12 @@ Date Range Picker Component for ExtJS
   * Include the `css/DateRangePicker.css` file (can be ommited if not using icons, or you want to use own icons)
   * Include the `src/dateRangePicker.js` file (Ext must be included prior to this)
   * Instantiate the class, for example `var myRangePicker = Ext.create('Ext.ux.button.DateRangePicker', drpDefaults: {} )`, or using the 'daterangepicker' xtype
-  * To get the value of the instance, use `var myPickerValue = myRangePicker.getValue()` and inspect the myPickerValue object
+  * To get the value of the instance, use `var myPickerValue = myRangePicker.getPickerValue()` and inspect the myPickerValue object
   
 
 **List of Changes**
 
+  * **2015-11-12**, renamed picker's getValue() to getPickerValue() to work with 6.2/6.5
   * **2015-11-12**, added 'requires' config for including Ext.picker.Date & Ext.form.field.Time if needed
   * **2015-11-12**, added support for binding two datefield components to the picker and automatically set their values upon picker change
   * **2015-11-12**, added diffPreciseUnits config option for customizing captions used to build the diffAsText property of the periodDetailsPrecise object part of the responce

@@ -392,7 +392,8 @@ Ext.define('Ext.ux.button.DateRangePicker',
 	}
 
 	//returns an object with various details of the choosen period
-	,getValue: function()
+	//2016-09-10: method renamed to getPickerValue, because getValue will conflict with the button getValue private method, Ext 6.2.0
+	,getPickerValue: function()
 	{
 		var me = this;
 		var drpConfig = me.drpDefaults;
