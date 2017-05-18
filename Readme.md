@@ -103,7 +103,7 @@ Date Range Picker Component for ExtJS
 
 **List of Changes**
 
-  * **2015-11-12**, renamed picker's getValue() to getPickerValue() to work with 6.2/6.5
+  * **2017-05-18**, renamed picker's getValue() to getPickerValue() to work with 6.2/6.5
   * **2015-11-12**, added 'requires' config for including Ext.picker.Date & Ext.form.field.Time if needed
   * **2015-11-12**, added support for binding two datefield components to the picker and automatically set their values upon picker change
   * **2015-11-12**, added diffPreciseUnits config option for customizing captions used to build the diffAsText property of the periodDetailsPrecise object part of the responce
