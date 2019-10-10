@@ -3,6 +3,9 @@ Date Range Picker Component for ExtJS
 -------------------------------------
 
 
+
+![preview](resources/pickerPreview.png)
+
 **Source at GitHub**
 
 [https://github.com/wencywww/Ext.ux.button.DateRangePicker](https://github.com/wencywww/Ext.ux.button.DateRangePicker)
@@ -31,7 +34,7 @@ Date Range Picker Component for ExtJS
   * Customizable via a simple config object
   * Returns an object containg the period details via the getPickerValue() method
   * Returned object also containg PRECISED period details, eg. 13 months are shown as 1 year and 1 month and so on
-  * Tested with ExtJS version 4.2.1.883 and up  
+  * Tested with ExtJS version 4.2.1.883 and up to 7.0.0.151  
 
 
 **Component layout:**
@@ -103,6 +106,7 @@ Date Range Picker Component for ExtJS
 
 **List of Changes**
 
+  * **2019-10-10**, added e preview picture to the repository, changed Sencha Fiddle's ExtJS version to be 7.0.0.151 by default
   * **2017-05-18**, renamed picker's getValue() to getPickerValue() to work with 6.2/6.5
   * **2015-11-12**, added 'requires' config for including Ext.picker.Date & Ext.form.field.Time if needed
   * **2015-11-12**, added support for binding two datefield components to the picker and automatically set their values upon picker change
